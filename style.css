@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@font-face {
+    font-family: "pixel";
+    src: url("/PixelMplus12-Regular.ttf") format("truetype");
+}
+
+
+
+table{
+    list-style: none;
+    cursor : cell;
+}
+
+td{
+    height: 12px;
+    width: 12px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-zone{
+    /* line-height: 0px; */
+    font-size: 16px;
+    /* background: #000; */
+    /* letter-spacing: 0px; */
+    user-select: none;
+}
+
+
+.map-chip{
+    background-color: #c9c9c9;
+}
+
+.map-chip-fixed{
+    background-color: #323232;
+}
+
+.right-zone{
+    background: rgb(185, 185, 185);
+    width: 20%;
+    height: 550px;
+}
+
+.tile-kind-t{
+    padding-top: 20px;
+    padding-left: 20px;
+    border-spacing: 5px;
+}
+
+
+.tile-name{
+    width: 80px;
+    font-family: quicksand;
+    font-weight: 700;
+}
+
+.tile-kind{
+    height: 20px;
+    width: 30px;
+}
+
+.fill-button{
+    cursor: pointer;
+    background: #fefefe;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 18px;
+    font-family: quicksand;
+    font-weight: 600;
+}
+
+
+.now-color{
+    height: 100px;
+    margin-top: 50px;
+}
+
+.menu{
+    background: #cacaca;
+    height: 70px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.export{
+    font-family: quicksand;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #fefefe;
+    width:fit-content;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+#pop-up {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#pop-up:checked + .overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+.close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tile-none{
+    background-color: #323232;
+}
+
+.tile-grass{
+    background-color: #53cd40e9;
+}
+
+.tile-soil{
+    background-color: #816714e9;
+}
+
+.tile-rock{
+    background-color: #727171;
+}
+
+.tile-water{
+    background-color: rgb(36, 109, 255);
+}
+
+.tile-loft{
+    background-color: #d9e40c;
+}
+
+.tile-maruzen{
+    background-color: rgb(36, 79, 218);
+}
+
+.tile-hotel{
+    background-color: #a163d7;
+}
+
+.tile-clubroom{
+    background-color: #59f033;
+}
+
+.tile-floor{
+    background-color: white;
+}
+
+.tile-gate{
+    background-color: aqua;
+}
